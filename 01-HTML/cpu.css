@@ -28,3 +28,21 @@ ol
 {
     list-style-type:"- ";
 }
+figure
+{
+    text-align:center;
+    font-style:italic;
+    color:aquamarine;
+}
+a
+{
+    color:aliceblue;
+}
+a:hover, a:hover:visited
+{
+    color:forestgreen;
+}
+a:visited
+{
+    color:greenyellow;
+}
