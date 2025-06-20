@@ -5,6 +5,10 @@
     /*font-family:'Segoe UI';*/
     font-family: 'Roboto Condensed';
 }
+/*h3
+{
+    color:lightgreen;
+}*/
 h4
 {
     text-align:right;
@@ -18,7 +22,11 @@ p
 ol
 {
     list-style-type:upper-roman;
-    /*list-style-type:;*/
+    font-size:16pt;
+}
+ul
+{
+    font-size:14pt;
 }
 .nesting-lvl-1
 {
@@ -45,4 +53,10 @@ a:hover, a:hover:visited
 a:visited
 {
     color:greenyellow;
+}
+object
+{
+    font-style:italic;
+    font-size:16pt;
+    color:darkgray;
 }
