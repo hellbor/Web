@@ -3,15 +3,26 @@
     background-color:#323232;
     color:gray;
     /*font-family:'Segoe UI';*/
-    font-family: 'Roboto Condensed';
+    font-family:Roboto Condensed;
 }
-/*h3
+h1, h4
 {
-    color:lightgreen;
-}*/
+    color:cadetblue;
+}
+h2
+{
+    color:lightseagreen;
+    font-size:18pt;
+}
+h3
+{
+    color:lightgray;
+    font-size:16pt;
+}
 h4
 {
     text-align:right;
+    font-size:14pt;
 }
 p
 {
@@ -21,8 +32,9 @@ p
 }
 ol
 {
-    list-style-type:upper-roman;
-    font-size:16pt;
+    list-style-type: upper-decimal;
+    font-size: 16pt;
+    color: aliceblue;
 }
 ul
 {
