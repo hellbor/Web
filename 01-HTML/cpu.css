@@ -29,6 +29,9 @@ p
     text-align:justify;
     font-size:14pt;
     font-family:Roboto;
+    border:solid 1px;
+    margin:22px;
+    padding:11px 22px 33px 44px;
 }
 ol
 {
@@ -71,4 +74,61 @@ object
     font-style:italic;
     font-size:16pt;
     color:darkgray;
+}
+table
+{
+    border:solid 2px;
+    margin:0 auto;
+    border-spacing:0;
+}
+thead
+{
+    background-color:#6b5fb5;
+    border:solid 10px;
+    border-color:black;
+}
+th
+{
+    color: white;
+    border: solid 1px;
+    padding: 11px 33px;
+    border-top: solid 2px #aeaed3;
+    border-bottom: solid 2px #aeaed3;
+}
+td
+{
+    border:solid 1px;
+    border:solid 1px #aeaed3;
+    text-align:center;
+}
+.row-header
+{
+   /*background-color: #6b5fb5;*/
+    color:white;
+    text-align:left;
+}
+    td[colspan="3"]
+    {
+        text-align: center;
+        color:white;
+        background-color: #6b5fb5
+    }
+.table-first-header
+{
+    border-left: solid 2px #aeaed3;
+}
+.table-last-header
+{
+    border-right: solid 2px #aeaed3;
+}
+div
+{
+    border:solid 1px;
+   /* margin:22px 32px 44px;*/ /*22px - верх/низ, 32px - лево/право*/
+    /*margin:22px 33px 44px;*/ /*22px - верх, 33px - лево/право, 44px - низ*/
+    margin:22px 33px 44px 55px; /*По часовой стрелке, начиная сверху*/
+    /*margin-left:32px;*/
+    /*margin-right:12px;
+    margin-top:22px;
+    margin-bottom:32px;*/
 }
