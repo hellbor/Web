@@ -1,0 +1,38 @@
+﻿body
+{
+}
+h1
+{
+    text-align:center;
+}
+table
+{
+    border: solid 2px;
+    margin: 0 auto;
+    border-spacing: 0;
+}
+thead
+{
+    background-color: #6b5fb5;
+    border: solid 10px;
+    border-color: black;
+}
+th
+{
+    background-color: #6b5fb5;
+    color: white;
+    border: solid 1px;
+    padding: 11px 100px;
+    border-top: solid 1px #aeaed3;
+    border-bottom: solid 1px #aeaed3;
+    font-family: Roboto;
+}
+td
+{
+    color: black;
+    border: solid 1px;
+    padding: 10px;
+    border: solid 1px #000000;
+    text-align: center;
+    font-family: Roboto;
+}

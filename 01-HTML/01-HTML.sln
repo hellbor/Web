@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		cpu.css = cpu.css
 		HTMLPage1.html = HTMLPage1.html
 		HTMLPage2-CPU.html = HTMLPage2-CPU.html
+		HTMLPeriodicTableOfMendeleev.html = HTMLPeriodicTableOfMendeleev.html
+		table.css = table.css
 	EndProjectSection
 EndProject
 Global
