@@ -184,48 +184,400 @@
 
     <!--<table border="1" cellspacing="0" style="border-color:rebeccapurple" align="center">-->
     <table>
-        <caption><em>Таблица 1</em> - Ядра</caption>
+        <caption><em>Таблица 1</em> - Процессоры и их характеристики</caption>
         <thead>
             <tr>
                 <th class="table-first-header">Процессор</th>
                 <th>Год выпуска</th>
-                <th class="table-last-header">Количество ядер</th>
+                <th class="table-last-header">x86-64</th>
+                <th>PPro</th>
+                <th>MMX</th>
+                <th>Версия SSE</th>
+                <th>3DNow!</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td colspan="3">Intel</td>
+                <th colspan="7">Процессоры Intel</th>
+            </tr>
+            <tr>
+                <td class="row-header">Pentium</td>
+                <td>1993</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Pentium Pro</td>
+                <td>1995</td>
+                <td></td>
+                <td>x</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Pentium MMX</td>
+                <td rowspan="2">1997</td>
+                <td></td>
+                <td></td>
+                <td>x</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Pentium II</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Celeron</td>
+                <td>1998</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Pentium III</td>
+                <td>1999</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
+                <td>1</td>
+                <td></td>
             </tr>
             <tr>
                 <td class="row-header">Pentium 4</td>
-                <td>2002</td>
+                <td rowspan="2">2000</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
+                <td>2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Celeron</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
                 <td>1</td>
+                <td></td>
             </tr>
             <tr>
-                <td class="row-header">Core-2 Duo</td>
-                <td rowspan="2">2008</td>
+                <td class="row-header">Celeron</td>
+                <td>2002</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
                 <td>2</td>
+                <td></td>
             </tr>
             <tr>
-                <td class="row-header">Core-2 Quad</td>
-                <!--<td>2008</td>-->
-                <td>4</td>
-            </tr>
-            <tr>
-                <td class="row-header">Core-i3</td>
-                <td rowspan="3">2011</td>
+                <td class="row-header">Pentium M</td>
+                <td>2003</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
                 <td>2</td>
+                <td></td>
             </tr>
             <tr>
-                <td class="row-header">Core-i5</td>
-                <!--<td>2011</td>-->
-                <td rowspan="2">4</td>
+                <td class="row-header">Pentium 4</td>
+                <td rowspan="2">2004</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>3</td>
+                <td></td>
             </tr>
             <tr>
-                <td class="row-header">Core-i7</td>
-                <!--<td>2011</td>-->
-                <!--<td>4</td>-->
+                <td class="row-header">Celeron D</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
+                <td>3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Pentium D, EE</td>
+                <td rowspan="2">2005</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Celeron D</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Celeron</td>
+                <td rowspan="4">2006</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>3S</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Celeron M</td>
+                <td rowspan="2"></td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Core Solo, Duo</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Core 2</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>3S</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Core 2</td>
+                <td rowspan="4">2007</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>4.1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Celeron M</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">3S</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Pentium (DC)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Pentium (DC, M)</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
+                <td>3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Atom</td>
+                <td rowspan="3">2008</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">3S</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Celeron (DC)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Core i7</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>4.2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Core i3, i5</td>
+                <td>2009</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>4.2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Core i9</td>
+                <td>2010</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>4.2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="7">Процессоры AMD</th>
+            </tr>
+            <tr>
+                <td class="row-header">K5</td>
+                <td>1996</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">K6</td>
+                <td>1997</td>
+                <td></td>
+                <td></td>
+                <td>x</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">K6-3D, K6-2+</td>
+                <td>1998</td>
+                <td></td>
+                <td></td>
+                <td>x</td>
+                <td></td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td class="row-header">K6-III</td>
+                <td rowspan="2">1999</td>
+                <td></td>
+                <td></td>
+                <td>x</td>
+                <td></td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Athlon</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
+                <td></td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Duron</td>
+                <td>2000</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
+                <td></td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Athlon XP</td>
+                <td rowspan="3">2001</td>
+                <td rowspan="3"></td>
+                <td rowspan="3">x</td>
+                <td rowspan="3">x</td>
+                <td rowspan="3">1</td>
+                <td rowspan="3">x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Athlon 4(M)</td>
+            </tr>
+            <tr>
+                <td class="row-header">Duron</td>
+            </tr>
+            <tr>
+                <td class="row-header">Athlon 64</td>
+                <td>2003</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>2</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Sempron</td>
+                <td>2004</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
+                <td>1 (2)</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Athlon XP-M</td>
+                <td rowspan="5">2005</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
+                <td>2</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Sempron</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>2 (3)</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Athlon (64) X2</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">3</td>
+                <td rowspan="2">x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Turon (M)</td>
+            </tr>
+            <tr>
+                <td class="row-header">Sempron (M)</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
+                <td>3</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Phenom</td>
+                <td>2007</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>4.a</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Athlon X2</td>
+                <td>2008</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>4.a</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Athlon Neo</td>
+                <td rowspan="3">2009</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>3</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Phenom II</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">x</td>
+                <td rowspan="2">4.a</td>
+                <td rowspan="2">x</td>
+            </tr>
+            <tr>
+                <td class="row-header">Athlon II, X3, X4</td>
             </tr>
         </tbody>
     </table>

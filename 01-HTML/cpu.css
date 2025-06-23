@@ -29,7 +29,7 @@ p
     text-align:justify;
     font-size:14pt;
     font-family:Roboto;
-    border:solid 1px;
+    /*border:solid 1px;*/
     margin:22px;
     padding:11px 22px 33px 44px;
 }
@@ -81,6 +81,12 @@ table
     margin:0 auto;
     border-spacing:0;
 }
+caption
+{
+    color: aquamarine;
+    font-size: 16pt;
+    font-family: Roboto;
+}
 thead
 {
     background-color:#6b5fb5;
@@ -89,17 +95,22 @@ thead
 }
 th
 {
+    background-color: #6b5fb5;
     color: white;
     border: solid 1px;
     padding: 11px 33px;
     border-top: solid 2px #aeaed3;
     border-bottom: solid 2px #aeaed3;
+    font-family: Roboto;
 }
 td
 {
-    border:solid 1px;
-    border:solid 1px #aeaed3;
-    text-align:center;
+    color: lightgray;
+    border: solid 1px;
+    padding: 5px;
+    border: solid 1px #aeaed3;
+    text-align: center;
+    font-family: Roboto;
 }
 .row-header
 {
@@ -123,7 +134,7 @@ td
 }
 div
 {
-    border:solid 1px;
+    /*border:solid 1px;*/
    /* margin:22px 32px 44px;*/ /*22px - верх/низ, 32px - лево/право*/
     /*margin:22px 33px 44px;*/ /*22px - верх, 33px - лево/право, 44px - низ*/
     margin:22px 33px 44px 55px; /*По часовой стрелке, начиная сверху*/
