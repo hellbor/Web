@@ -23,13 +23,17 @@
             </div>
             <div>
                 <lable for="password">Пароль:</lable>
-                <input type="password" id="password" name="password" size="32"
-                       placeholder="Пароль - РыбаМеч">
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email"/>
-                </div>
-                <input type="submit" value="Отправить">
+                <input type="password" id="password" name="password" size="26"
+                       placeholder="Пароль - РыбаМеч"
+                       pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[~!@#$%^&*\(\)\[\]\{\}_+=\-\/\\'&quot\;:,.\|?<>]).{8,}$" />
+                       <!--maxlength="8"-->
+                <!--<button type="button">Показать</button>-->
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" />
+            </div>
+            <input type="submit" value="Отправить">
             </div>
         </form>
     </main>

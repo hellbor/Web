@@ -5,7 +5,15 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EFB8EA9A-1F8A-4873-AD98-E6BABBC75B11}"
 	ProjectSection(SolutionItems) = preProject
+		cpu.css = cpu.css
+		HTMLPage1.html = HTMLPage1.html
+		01-intro\HTMLPage1.html = 01-intro\HTMLPage1.html
+		HTMLPage2-CPU.html = HTMLPage2-CPU.html
 		HTMLPeriodicTableOfMendeleev.html = HTMLPeriodicTableOfMendeleev.html
+		03-Forms\index.html = 03-Forms\index.html
+		index.html = index.html
+		03-Forms\style.css = 03-Forms\style.css
+		style.css = style.css
 		table.css = table.css
 	EndProjectSection
 EndProject
