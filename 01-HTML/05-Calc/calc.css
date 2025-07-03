@@ -17,6 +17,7 @@
     background: rgb(236,233,216);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    /*box-shadow: 0 0 5px 5px blue;*/
 }
 
 #app_icon
@@ -91,3 +92,39 @@
         background-image: linear-gradient(to bottom right, #E98485, #FF3020);
         box-shadow: inset 0px 0px 3px 3px #C49A9B;
     }
+
+/*----------------------------------------------------------------------------------------*/
+
+.client-rect
+{
+    width: auto;
+    height: 320px;
+    display:block;
+}
+#main-area
+{
+    display:flex;
+    justify-content:space-between;
+}
+#bottom-border
+{
+    width: 100%;
+    height: 5px;
+    background-color: darkblue;
+    background-image: linear-gradient(to right, /*#001177FF,*/ #0055BBFF, #001177CC);
+}
+#left-border
+{
+    width: 5px;
+    height: 320px;
+    /*background-color:darkblue;*/
+    background-image: linear-gradient(to right, #0022BBFF, #0055FFFF, #0022BBFF);
+    /*background-image: linear-gradient(to right, #000536C9, #0055FFFF, #0055AAFF);*/
+}
+#right-border
+{
+    width: 5px;
+    height: 320px;
+    background-color: darkblue;
+    background-image: linear-gradient(to right, #001177CC, #0055BBFF, #001177CC);
+}
