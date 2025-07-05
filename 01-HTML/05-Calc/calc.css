@@ -71,13 +71,14 @@
         background-image: linear-gradient(to bottom right, #75C1FF, #2045D5);
         box-shadow: inset 0px 0px 5px 3px #77A1F5;
     }
-   .control_button:active
+
+    .control_button:active
     {
         /*border-color:lightgray;*/
         background-image: linear-gradient(to bottom right, #55A1CF, #0025B5);
         box-shadow: inset 0px 0px 5px 3px #5781F5;
     }
-   
+
     .control_button:disabled, .control_button:disabled:hover
     {
         color: lightgray;
@@ -95,7 +96,8 @@
         background-image: linear-gradient(to bottom right, #E98485, #FF3020);
         box-shadow: inset 0px 0px 3px 3px #C49A9B;
     }
-     #close_button:active
+
+    #close_button:active
     {
         background-image: linear-gradient(to bottom right, #D95455, #FF3020);
         box-shadow: inset 0px 0px 3px 3px #B48A8B;
@@ -153,6 +155,12 @@
     width: 100%;
 }
 
+.display
+{
+    display: flex;
+    justify-content: center;
+}
+
 .menu-bar
 {
     display: flex;
@@ -182,10 +190,69 @@
 
 #text
 {
-    width: 98%;
+    width: 93%;
 }
 
 input[type=text]
 {
     text-align: right;
+}
+
+.buttons
+{
+    display: flex;
+    justify-content: left;
+}
+
+    .buttons button
+    {
+        width: 50px;
+        height: 40px;
+        margin: 5px 10px;
+        /*border:solid 1px darkblue;
+        border-radius:5px;*/
+    }
+
+.memory-buttons
+{
+    /*border:solid 1px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .memory-buttons > button
+    {
+        color: red;
+    }
+
+    .memory-buttons > #square
+    {
+        width: 32px;
+        height: 32px;
+        /*box-shadow:inset 2px 2px 0px 0px grey;*/
+        border: inset 2px;
+        margin: 7px 7px;
+    }
+
+.main-block button
+{
+    margin: 5px;
+}
+
+.wide-buttons > button
+{
+    width: 85px;
+    color: red;
+}
+.digit-buttons
+{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-gap:10px;
+}
+.digit-buttons button
+{
+    color:darkblue;
 }
