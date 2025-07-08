@@ -208,17 +208,17 @@ input[type=text]
     {
         width: 50px;
         height: 40px;
-        margin: 5px 10px;
+        margin: 5px;
         /*border:solid 1px darkblue;
         border-radius:5px;*/
     }
 
 .memory-buttons
 {
-    /*border:solid 1px;*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 50px;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-gap: 10px;
 }
 
     .memory-buttons > button
@@ -240,19 +240,53 @@ input[type=text]
     margin: 5px;
 }
 
-.wide-buttons > button
+.wide-buttons
 {
-    width: 85px;
-    color: red;
+    margin: 0 15px;
 }
+
+    .wide-buttons > button
+    {
+        width: 85px;
+        color: red;
+    }
+
+.digit-and-operations
+{
+    display: flex;
+    justify-content: left;
+}
+
 .digit-buttons
 {
     display: grid;
     grid-template-columns: 50px 50px 50px;
     grid-template-rows: 40px 40px 40px 40px;
-    grid-gap:10px;
+    grid-gap: 10px;
+    /*margin: 0 15px;*/
+    margin-left:10px;
 }
-.digit-buttons button
+
+    .digit-buttons button
+    {
+        color: darkblue;
+    }
+
+.operational-buttons, .results
 {
-    color:darkblue;
+    display: grid;
+    grid-template-columns: 50px;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-gap: 10px;
+    margin-left:10px;
 }
+
+    .operational-buttons > button
+    {
+        color: red;
+    }
+
+    .results > button
+    {
+        color:darkblue;
+    }
