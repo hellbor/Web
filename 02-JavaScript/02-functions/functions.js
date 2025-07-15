@@ -32,5 +32,20 @@ function SwitchBackground()
     console.log(delay);
     document.body.style.transition = `background-color ${delay}s, color ${delay}s`;
     document.getElementById('switchBackground').style.transition = `background-image ${delay}s`;
-    document.body.className = document.body.className == "light" ? "dark" : "light";
+    document.body.className = document.body.className === "light" ? "dark" : "light";
+}
+document.addEventListener("mousemove", function (event)
+{
+    let x = event.clientX;
+    let y = event.clientY;
+    document.getElementById("mouse").innerHTML = `X = ${x}, Y = ${y}`;
+}
+);
+
+function setImage()
+{
+    let filename = document.getElementById("image-file").value;
+    console.log(filename);
+    let splited_filename = filename.split('\\');
+    document.getElementById("photo").attributes.src = splited_filename[splited_filename.length];
 }

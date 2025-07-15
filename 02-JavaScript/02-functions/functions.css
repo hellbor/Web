@@ -23,19 +23,20 @@ body
     justify-content: space-between;
     align-items: center;
 }
+
 #delay
 {
-    width:55px;
-    height:25px;
+    width: 55px;
+    height: 25px;
 }
+
 #switchBackground
 {
     width: 32px;
     height: 32px;
     margin: 24px;
-    transition:3s;
-    background-size:32px 32px;
-
+    transition: 3s;
+    background-size: 32px 32px;
     /*transition: 3s;*/
 }
 
@@ -64,7 +65,21 @@ img[src='img/sun.png']
 
     .dark #switchBackground
     {
-        background-image: url("img/sun.png");
         /*content: url('img/sun.png');*/
+        background-image: url("img/sun.png");
         filter: brightness(0) invert(1);
     }
+
+/*#photo
+{
+    border: solid 1px;
+    width: 400px;
+    height: 300px;
+}*/
+
+#photo-container
+{
+    border: solid 1px;
+    width: 400px;
+    height: 300px;
+}
