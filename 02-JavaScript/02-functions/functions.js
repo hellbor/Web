@@ -44,8 +44,14 @@ document.addEventListener("mousemove", function (event)
 
 function setImage()
 {
-    let filename = document.getElementById("image-file").value;
-    console.log(filename);
-    let splited_filename = filename.split('\\');
-    document.getElementById("photo").attributes.src = splited_filename[splited_filename.length];
+    let filename = document.getElementById("image-file");
+     /*console.log(filename);
+     let splitted_filename = filename.split('\\');
+     document.getElementById("photo").src = splitted_filename[splitted_filename.length];*/
+    let reader = new FileReader();
+    reader.onload = function (e)
+    {
+        document.getElementById("photo").src = e.target.result;
+    }
+    reader.readAsDataURL(filename.files[0]);
 }
