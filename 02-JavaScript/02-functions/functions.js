@@ -1,4 +1,4 @@
-// JavaScript source code
+﻿// JavaScript source code
 
 function calculatePower()
 {
@@ -82,10 +82,62 @@ document.body.onload = function tick_timer()
     document.getElementById("current-date").style.visibility = document.getElementById("show-date").checked ? "visible" : "hidden";
     document.getElementById("weekday").style.visibility = document.getElementById("show-weekday").checked ? "visible" : "hidden";
 
-    setTimeout(tick_timer, 100);   //������� setTimeout(function,delay) �������� ������� 'function' � ��������� 'delay'
+    setTimeout(tick_timer, 100);   //Функция setTimeout(function,delay) вызывает функцию 'function' с задержкой 'delay'
 }
 
 function addLeadingZero(number)
 {
     return number < 10 ? "0" + number : number;
+}
+
+document.getElementById("btn-start").onclick = function startCountdownTimer()
+{
+    let targetDate = document.getElementById("target-date");
+    let targetTime = document.getElementById("target-time");
+    let btnStart = document.getElementById("btn-start");
+    targetDate.disabled = targetTime.disabled = !targetDate.disabled;
+    if (btnStart.value === "Start")
+    {
+        btnStart.value = "Stop";
+        tickCountdown();
+    }
+    else
+    {
+        btnStart.value = "Start";
+    }
+}
+function tickCountdown()
+{
+    if (!document.getElementById("target-time").disabled) return;
+    let now = new Date();
+    console.log(`now timezoneOffset:\t${now.getTimezoneOffset()}`);
+    //Controls - это элементы интерфейса.
+    let targetDateControl = document.getElementById("target-date");
+    let targetTimeControl = document.getElementById("target-time");
+    let targetDate = targetDateControl.valueAsDate;
+    let targetTime = targetTimeControl.valueAsDate;
+
+    //Выравниваем часовой пояс:
+    targetDate.setHours(targetDate.getHours() + targetDate.getTimezoneOffset() / 60);
+    targetTime.setHours(targetTime.getHours() + targetTime.getTimezoneOffset() / 60);
+
+    //Приводим дфту в целевом времени к выбранной дате:
+    targetTime.setFullYear(targetDate.getFullYear());
+    targetTime.setMonth(targetDate.getMonth());
+    targetTime.setDate(targetDate.getDate());
+
+    //Определяем промежуток времени до указанной даты:
+    let duration = targetTime - now;    //Разность дат вычисляется в формате Timestamp
+    document.getElementById("duration").innerHTML = duration;
+    //Timestamp - это количество миллисекунд от 1 января 1970 года.
+    let timestamp = Math.trunc(duration / 1000);
+    document.getElementById("timestamp").innerHTML = timestamp;
+
+    //Отображаем целевую дату/время и промежуток на странице:
+    document.getElementById("target-date-value").innerHTML = targetDate;
+    document.getElementById("target-time-value").innerHTML = targetTime;
+
+    console.log(`targetTime timezoneOffset:\t${now.getTimezoneOffset()}`);
+
+    setTimeout(tickCountdown, 100);
 }
